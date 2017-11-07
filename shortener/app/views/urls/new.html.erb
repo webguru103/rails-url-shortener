@@ -1,0 +1,8 @@
+<h1>Create a new URL:</h1>
+
+<%= form_for "", url: urls_path, method: :post do |f| %>
+	<%= f.label :url %>
+	<%= f.text_field :url, :required=>true %>
+	<%= f.submit "Create URL" %>
+<% end %>
+<p>06/11/2017 @webguru103 - Marius</p>
