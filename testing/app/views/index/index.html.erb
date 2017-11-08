@@ -1,0 +1,11 @@
+
+<h1>Create a new URL:</h1>
+
+<%= form_for @short_url do |f| %>
+    <%= f.label :original_url, 'Url to shorten:' %>
+    <%= f.text_field :original_url, :required=>true %>
+    <br>
+    <%= f.hidden_field :short_url %>
+    <%= f.submit "Create URL" %>
+<% end %>
+<p>06/11/2017 @webguru103 - Marius</p>

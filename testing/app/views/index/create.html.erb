@@ -1,0 +1,8 @@
+<% if $url %>
+	<h1>Your url for <%= $url.original_url %> is: </h1>
+	<%= link_to $url.short_url, "#{root_path}#{$url.short_url}", target: "_blank" %><br /><br />
+<% else %>
+	<h1>Your url is Invalid.</h1>
+<% end %>
+<%= link_to "Create another URL", root_path %>
+<p>06/11/2017 @webguru103 - Marius</p>
